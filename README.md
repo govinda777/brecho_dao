@@ -4,6 +4,55 @@
 
 O Brechó Autônomo DAO é uma organização autônoma descentralizada (DAO) dedicada a administrar um brechó autônomo. Utilizando conceitos de experimento social e tecnologias de blockchain, este brechó opera de forma completamente autônoma, onde os clientes compram e vendem roupas usando um sistema baseado em QRCode e PIX.
 
+## Fluxo de Funcionamento
+
+```mermaid
+graph TD
+    A[Entrada do Cliente] --> B[Seleção de Roupas]
+    B --> C{Escaneia QRCode}
+    C --> D[Página de Pagamento]
+    D --> E[Paga via PIX]
+    E --> F[Sai com a Roupa]
+
+    G[Cliente Vende Roupas] --> H[Depósito de Roupas no Brechó]
+    H --> I[Avaliação pelo Time da DAO]
+    I --> J[Notificação de Orçamento]
+    J --> K{Aceita Orçamento?}
+    K -- Sim --> L[Escolhe Recebimento]
+    L --> M[Créditos ou Dinheiro]
+    M --> N[Fim do Fluxo de Venda]
+
+    O[Propostas de Governança] --> P[Submissão de Propostas]
+    P --> Q[Votação da DAO]
+    Q --> R[Implementação de Decisões]
+
+    S[Ferramentas Anti-furto] --> T[Experimento Social com Câmeras]
+    T --> U[Transmissão ao Vivo no YouTube]
+
+    style A fill:#f9f,stroke:#333,stroke-width:2px
+    style B fill:#ccf,stroke:#333,stroke-width:2px
+    style C fill:#ccf,stroke:#333,stroke-width:2px
+    style D fill:#ccf,stroke:#333,stroke-width:2px
+    style E fill:#ccf,stroke:#333,stroke-width:2px
+    style F fill:#ccf,stroke:#333,stroke-width:2px
+    style G fill:#f9f,stroke:#333,stroke-width:2px
+    style H fill:#ccf,stroke:#333,stroke-width:2px
+    style I fill:#ccf,stroke:#333,stroke-width:2px
+    style J fill:#ccf,stroke:#333,stroke-width:2px
+    style K fill:#ccf,stroke:#333,stroke-width:2px
+    style L fill:#ccf,stroke:#333,stroke-width:2px
+    style M fill:#ccf,stroke:#333,stroke-width:2px
+    style N fill:#ccf,stroke:#333,stroke-width:2px
+    style O fill:#f9f,stroke:#333,stroke-width:2px
+    style P fill:#ccf,stroke:#333,stroke-width:2px
+    style Q fill:#ccf,stroke:#333,stroke-width:2px
+    style R fill:#ccf,stroke:#333,stroke-width:2px
+    style S fill:#f9f,stroke:#333,stroke-width:2px
+    style T fill:#ccf,stroke:#333,stroke-width:2px
+    style U fill:#ccf,stroke:#333,stroke-width:2px
+```
+
+
 ## Funcionamento da Venda de Produtos
 
 ### Etapas de Compra:
